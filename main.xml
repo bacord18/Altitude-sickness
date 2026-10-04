@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:gravity="center_horizontal"
+    android:padding="24dp" android:background="#F7F8FA">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="CURRENT ALTITUDE" android:textStyle="bold" android:textSize="16sp" android:textColor="#315C8A"/>
+    <TextView android:id="@+id/altitude" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginTop="18dp" android:text="— ft" android:textStyle="bold" android:textSize="54sp"/>
+    <TextView android:id="@+id/accuracy" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" android:text="Waiting for GPS…" android:textSize="15sp"/>
+    <TextView android:id="@+id/coords" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginTop="18dp" android:text="Lat —   Lon —" android:textSize="14sp"/>
+    <TextView android:id="@+id/status" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" android:text="Waiting for permission…" android:textSize="14sp"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:gravity="center" android:layout_marginTop="32dp">
+        <Button android:id="@+id/unitButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Feet / Meters"/>
+        <Button android:id="@+id/refreshButton" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginStart="12dp" android:text="Refresh GPS"/>
+    </LinearLayout>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="28dp" android:text="Tip: GPS altitude is less precise than horizontal position. Multiple readings are averaged to make the display steadier." android:textSize="13sp"/>
+</LinearLayout>
